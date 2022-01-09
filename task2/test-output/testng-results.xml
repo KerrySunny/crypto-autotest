@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32206" started-at="2022-01-09T07:54:51Z" finished-at="2022-01-09T07:55:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32206" started-at="2022-01-09T07:54:51Z" finished-at="2022-01-09T07:55:24Z">
+      <class name="com.crypto.task2.cases.Forcast4NineTest">
+        <test-method status="PASS" signature="forcast4NineUrl(java.lang.Integer, java.lang.String)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="forcast4NineUrl" duration-ms="2" started-at="2022-01-09T15:54:51Z" description="获取天气预报对应的接口url" data-provider="forcast4NineUrl" finished-at="2022-01-09T15:54:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=${dataType}&lang=${lang}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forcast4NineUrl -->
+        <test-method name="testAccess200" signature="testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="1516" finished-at="2022-01-09T15:54:53Z" started-at="2022-01-09T15:54:51Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testAccess200" description="测试接口返回200场景">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccess200 -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-01-09T15:54:51Z" finished-at="2022-01-09T15:54:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forcast4NineUrl status=SUCCESS method=Forcast4NineTest.forcast4NineUrl(java.lang.Integer, java.lang.String)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-01-09T15:54:53Z" finished-at="2022-01-09T15:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAccess200 status=SUCCESS method=Forcast4NineTest.testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method name="testAccess200" signature="testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="21390" finished-at="2022-01-09T15:55:14Z" started-at="2022-01-09T15:54:53Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testAccess200" description="测试接口返回200场景">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccess200 -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="2" started-at="2022-01-09T15:55:14Z" finished-at="2022-01-09T15:55:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAccess200 status=SUCCESS method=Forcast4NineTest.testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method name="testAccess200" signature="testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="2950" finished-at="2022-01-09T15:55:17Z" started-at="2022-01-09T15:55:14Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testAccess200" description="测试接口返回200场景">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccess200 -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-01-09T15:55:17Z" finished-at="2022-01-09T15:55:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAccess200 status=SUCCESS method=Forcast4NineTest.testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method name="testWentByDay" signature="testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="903" finished-at="2022-01-09T15:55:18Z" started-at="2022-01-09T15:55:17Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testWentByDay" description="测试获取对应天数的湿度数据-多语言版本">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWentByDay -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-01-09T15:55:18Z" finished-at="2022-01-09T15:55:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWentByDay status=SUCCESS method=Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method name="testWentByDay" signature="testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="1085" finished-at="2022-01-09T15:55:19Z" started-at="2022-01-09T15:55:18Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testWentByDay" description="测试获取对应天数的湿度数据-多语言版本">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWentByDay -->
+        <test-method name="testWentByDay" signature="testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="323" finished-at="2022-01-09T15:55:20Z" started-at="2022-01-09T15:55:19Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testWentByDay" description="测试获取对应天数的湿度数据-多语言版本">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWentByDay -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-01-09T15:55:19Z" finished-at="2022-01-09T15:55:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWentByDay status=SUCCESS method=Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="1" started-at="2022-01-09T15:55:20Z" finished-at="2022-01-09T15:55:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWentByDay status=SUCCESS method=Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method name="testWentByDay" signature="testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="1075" finished-at="2022-01-09T15:55:21Z" started-at="2022-01-09T15:55:20Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testWentByDay" description="测试获取对应天数的湿度数据-多语言版本">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWentByDay -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="1" started-at="2022-01-09T15:55:21Z" finished-at="2022-01-09T15:55:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWentByDay status=SUCCESS method=Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method name="testWentByDay" signature="testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="2328" finished-at="2022-01-09T15:55:23Z" started-at="2022-01-09T15:55:21Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testWentByDay" description="测试获取对应天数的湿度数据-多语言版本">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWentByDay -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-01-09T15:55:23Z" finished-at="2022-01-09T15:55:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWentByDay status=SUCCESS method=Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method name="testWentByDay" signature="testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" status="PASS" duration-ms="593" finished-at="2022-01-09T15:55:24Z" started-at="2022-01-09T15:55:23Z" depends-on-methods="com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl" data-provider="testWentByDay" description="测试获取对应天数的湿度数据-多语言版本">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fnd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[en]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWentByDay -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-01-09T15:55:24Z" finished-at="2022-01-09T15:55:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWentByDay status=SUCCESS method=Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.crypto.task2.cases.Forcast4NineTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

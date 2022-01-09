@@ -1,0 +1,222 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+<head>
+  <title>接口测试报告</title>
+  <script>
+	  function test(con){
+		  alert(con);
+	  }
+  </script>
+  
+  <style>
+	table {
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	th, td {
+	  text-align: left;
+	  padding: 8px;
+	}
+	th {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+
+	tr:nth-child(even) {background-color: #f2f2f2;}
+	</style>
+
+</head>
+<body>
+
+<h1>接口测试报告</h1>
+<h3>接口测试汇总</h3>
+<div style="overflow-x:auto;">
+	<table border="1" cellspacing='0' cellpadding='0'>
+	  <tr class="columnHeadings">
+	    <th style="width:65px;">执行总数</th>
+	    <th style="width:60px;">未执行数</th>
+	    <th style="width:60px;">通过数</th>
+	    <th style="width:60px;">失败数</th>
+	    <th style="width:80px;">跳过数</th>
+	    <th style="width:60px;">耗时(S)</th>
+	    <th style="width:60px;">通过率</th>
+	    <th style="width:300px;">执行</th>
+	    <th style="width:300px;">未执行</th>
+	  </tr>
+	  
+	  <tr>
+	    <td>10</td> 
+	    <td>0</td> 
+	    <td>10</td> 
+	    <td>0</td> 
+	    <td>0</td> 
+	    <td>32.206</td>     
+	    <td>100.00%</td>    
+	    <td>
+	    	        Forcast4NineTest.forcast4NineUrl(java.lang.Integer, java.lang.String)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]<br/>
+	    	        Forcast4NineTest.testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]<br/>
+	    	        Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]<br/>
+	    	    </td> 
+	    <td>
+	    	    </td>     
+	</tr>  
+	</table>
+</div>
+<br/><br/>
+
+<h3>测试通过案例</h3>
+<div style="overflow-x:auto;">
+	<table border="1" cellspacing='0' cellpadding='0'>
+	  <tr>
+	  <tr class="columnHeadings">
+	    <th>序号</th>
+	    <th style="width:200px;">方法名</th>
+	    <th style="width:200px;">类名</th>
+	    <th style="width:200px;">耗时</th>
+	    <th style="width:200px;">参数</th>
+	    <th style="width:200px;">描述</th>
+	    <th style="width:200px;">输出</th>
+	    <th style="width:200px;">依赖方法</th>
+	  </tr>
+	  
+	  	 <tr>   
+	      <td>1</td>
+	      <td>forcast4NineUrl</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>0.002</td> 
+	      <td>1, "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=${dataType}&lang=${lang}"</td> 
+	      <td><div style="width:200px;"> 获取天气预报对应的接口url</div></td> 
+	      <td>获取天气预报对应的接口url成功<br/></td>
+	      <td></td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>2</td>
+	      <td>testAccess200</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>1.516</td> 
+	      <td>1, "fnd", "tc", 200</td> 
+	      <td><div style="width:200px;"> 测试接口返回200场景</div></td> 
+	      <td>获取天气预报对应的接口状态-响应200成功<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>3</td>
+	      <td>testAccess200</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>21.390</td> 
+	      <td>1, "fnd", "sc", 200</td> 
+	      <td><div style="width:200px;"> 测试接口返回200场景</div></td> 
+	      <td>获取天气预报对应的接口状态-响应200成功<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>4</td>
+	      <td>testAccess200</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>2.950</td> 
+	      <td>1, "fnd", "en", 200</td> 
+	      <td><div style="width:200px;"> 测试接口返回200场景</div></td> 
+	      <td>获取天气预报对应的接口状态-响应200成功<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>5</td>
+	      <td>testWentByDay</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>0.903</td> 
+	      <td>1, "fnd", "tc", 2</td> 
+	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
+	      <td>language=tc forecastDate=20220111 湿度: 50%~85%<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>6</td>
+	      <td>testWentByDay</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>1.085</td> 
+	      <td>1, "fnd", "sc", 2</td> 
+	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
+	      <td>language=sc forecastDate=20220111 湿度: 50%~85%<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>7</td>
+	      <td>testWentByDay</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>0.323</td> 
+	      <td>1, "fnd", "en", 2</td> 
+	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
+	      <td>language=en forecastDate=20220111 湿度: 50%~85%<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>8</td>
+	      <td>testWentByDay</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>1.075</td> 
+	      <td>1, "fnd", "tc", 1</td> 
+	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
+	      <td>language=tc forecastDate=20220110 湿度: 70%~85%<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>9</td>
+	      <td>testWentByDay</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>2.328</td> 
+	      <td>1, "fnd", "sc", 1</td> 
+	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
+	      <td>language=sc forecastDate=20220110 湿度: 70%~85%<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		 <tr>   
+	      <td>10</td>
+	      <td>testWentByDay</td>  
+	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
+	      <td>0.593</td> 
+	      <td>1, "fnd", "en", 1</td> 
+	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
+	      <td>language=en forecastDate=20220110 湿度: 70%~85%<br/></td>
+	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
+	  
+	</tr> 
+		   
+	</table>
+</div>
+<br/>
+
+
+<br/><br/>
+<h3>测试失败案例</h3>
+<div style="overflow-x:auto;">
+	<table border="1" cellspacing='0' cellpadding='0'>
+	  <tr class="columnHeadings">
+	    <th style="width:40px;">序号</th>
+	    <th>方法名</th>
+	    <th>类名</th>
+	    <th>耗时</th>
+	    <th style="width:200px;">参数</th>
+	    <th style="width:200px;">描述</th>
+	    <th style="width:200px;">输出</th>
+	    <th style="width:200px;">依赖方法</th>
+	    <th style="width:200px;">异常</th>
+	    <th style="width:200px;">失败信息</th>
+	  </tr>
+	  
+	  	
+	</table>
+</div>
+
+<br/><br/>
+
+</body>
+</html>

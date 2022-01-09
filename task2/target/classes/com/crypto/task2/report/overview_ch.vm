@@ -1,0 +1,150 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+<head>
+  <title>接口测试报告</title>
+  <script>
+	  function test(con){
+		  alert(con);
+	  }
+  </script>
+  
+  <style>
+	table {
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	th, td {
+	  text-align: left;
+	  padding: 8px;
+	}
+	th {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+
+	tr:nth-child(even) {background-color: #f2f2f2;}
+	</style>
+
+</head>
+<body>
+
+<h1>接口测试报告</h1>
+<h3>接口测试汇总</h3>
+<div style="overflow-x:auto;">
+	<table border="1" cellspacing='0' cellpadding='0'>
+	  <tr class="columnHeadings">
+	    <th style="width:65px;">执行总数</th>
+	    <th style="width:60px;">未执行数</th>
+	    <th style="width:60px;">通过数</th>
+	    <th style="width:60px;">失败数</th>
+	    <th style="width:80px;">跳过数</th>
+	    <th style="width:60px;">耗时(S)</th>
+	    <th style="width:60px;">通过率</th>
+	    <th style="width:300px;">执行</th>
+	    <th style="width:300px;">未执行</th>
+	  </tr>
+	  
+	  <tr>
+	    <td>$overView.allTestsSize</td> 
+	    <td>$overView.excludeTestsSize</td> 
+	    <td>$overView.passedTestsSize</td> 
+	    <td>$overView.failedTestsSize</td> 
+	    <td>$overView.skippedTestsSize</td> 
+	    <td>$overView.testsTime</td>     
+	    <td>$overView.passPercent</td>    
+	    <td>
+	    #foreach($p in $overView.allTestsMethod)
+	        $p<br/>
+	    #end
+	    </td> 
+	    <td>
+	    #foreach($e in $overView.excludeTestsMethod)
+	        $e<br/>
+	    #end
+	    </td>     
+	</tr>  
+	</table>
+</div>
+<br/><br/>
+
+<h3>测试通过案例</h3>
+<div style="overflow-x:auto;">
+	<table border="1" cellspacing='0' cellpadding='0'>
+	  <tr>
+	  <tr class="columnHeadings">
+	    <th>序号</th>
+	    <th style="width:200px;">方法名</th>
+	    <th style="width:200px;">类名</th>
+	    <th style="width:200px;">耗时</th>
+	    <th style="width:200px;">参数</th>
+	    <th style="width:200px;">描述</th>
+	    <th style="width:200px;">输出</th>
+	    <th style="width:200px;">依赖方法</th>
+	  </tr>
+	  
+	  #foreach( $p in $pass)
+	 <tr>   
+	      <td>$velocityCount</td>
+	      <td>${p.testName}</td>  
+	      <td>$p.className</td> 
+	      <td>$p.duration</td> 
+	      <td>$p.params</td> 
+	      <td><div style="width:200px;"> $!p.description</div></td> 
+	      <td>$p.output<br/></td>
+	      <td>$p.dependMethod</td>
+	  
+	</tr> 
+	#end
+	   
+	</table>
+</div>
+<br/>
+
+
+<br/><br/>
+<h3>测试失败案例</h3>
+<div style="overflow-x:auto;">
+	<table border="1" cellspacing='0' cellpadding='0'>
+	  <tr class="columnHeadings">
+	    <th style="width:40px;">序号</th>
+	    <th>方法名</th>
+	    <th>类名</th>
+	    <th>耗时</th>
+	    <th style="width:200px;">参数</th>
+	    <th style="width:200px;">描述</th>
+	    <th style="width:200px;">输出</th>
+	    <th style="width:200px;">依赖方法</th>
+	    <th style="width:200px;">异常</th>
+	    <th style="width:200px;">失败信息</th>
+	  </tr>
+	  
+	  #foreach( $p in $fail)
+	  <tr>   
+	  <td>$velocityCount</td>
+	  <td>$p.testName</td>  
+	  <td>$p.className</td> 
+	  <td>$p.duration</td> 
+	  <td>$!p.params</td> 
+	  <td>$!p.description</td> 
+	  <td>$p.output<br/></td>
+	  <td>$p.dependMethod</td>
+	  <td>$p.throwable</td>
+	  <td>
+	   #if($p.throwable )
+		   #set($tst='')
+			  #foreach($o in $p.stackTrace)
+			   #set($tst=$tst+$o)
+			  #end
+		  	  <font onclick="test('$tst')" >查看详情信息</font>
+	   #end
+	  </td>  
+	</tr> 
+	#end
+	
+	</table>
+</div>
+
+<br/><br/>
+
+</body>
+</html>

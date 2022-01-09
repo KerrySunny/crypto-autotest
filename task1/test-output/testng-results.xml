@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51481" started-at="2022-01-09T07:50:06Z" finished-at="2022-01-09T07:50:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51481" started-at="2022-01-09T07:50:06Z" finished-at="2022-01-09T07:50:58Z">
+      <class name="com.crypto.task1.cases.FirstSubTradeTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.crypto.task1.cases.FirstSubTradeTest@7cd62f43]" name="init" is-config="true" duration-ms="7655" started-at="2022-01-09T15:50:06Z" finished-at="2022-01-09T15:50:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="accessIndex(java.lang.Integer, java.lang.String)[pri:0, instance:com.crypto.task1.cases.FirstSubTradeTest@7cd62f43]" name="accessIndex" duration-ms="4217" started-at="2022-01-09T15:50:14Z" description="进入交易主页" data-provider="index" finished-at="2022-01-09T15:50:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://crypto.com/exchange/markets]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessIndex -->
+        <test-method status="PASS" signature="setCookie()[pri:0, instance:com.crypto.task1.cases.FirstSubTradeTest@7cd62f43]" name="setCookie" duration-ms="38384" started-at="2022-01-09T15:50:18Z" description="去掉cookie弹框" depends-on-methods="com.crypto.task1.cases.FirstSubTradeTest.accessIndex" finished-at="2022-01-09T15:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCookie -->
+        <test-method name="getCro" signature="getCro(java.lang.Integer, java.lang.String, java.lang.String)[pri:0, instance:com.crypto.task1.cases.FirstSubTradeTest@7cd62f43]" status="PASS" duration-ms="232" finished-at="2022-01-09T15:50:57Z" started-at="2022-01-09T15:50:57Z" depends-on-methods="com.crypto.task1.cases.FirstSubTradeTest.setCookie" data-provider="getCro" description="切换到目标交易类型">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//*[@id="app"]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div/div[6]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CRO]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCro -->
+        <test-method name="getFirstSubTrade" signature="getFirstSubTrade(java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crypto.task1.cases.FirstSubTradeTest@7cd62f43]" status="PASS" duration-ms="964" finished-at="2022-01-09T15:50:58Z" started-at="2022-01-09T15:50:57Z" depends-on-methods="com.crypto.task1.cases.FirstSubTradeTest.getCro" data-provider="getFirstSubTrade" description="进入子类型中第一个交易页面">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tbody__row]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[base]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[quote]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ETH]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[/CRO]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[btn-trade]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFirstSubTrade -->
+      </class> <!-- com.crypto.task1.cases.FirstSubTradeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
