@@ -9,9 +9,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.alibaba.fastjson.JSONObject;
+import com.crypto.task2.common.EnvParamter;
+import com.crypto.task2.common.ResponseBean;
+import com.crypto.task2.interfaces.WeathAPI;
 import com.crypto.task2.parameters.ForcastParameters;
 import com.crypto.task2.report.GenerateReporter;
 import com.crypto.task2.util.DataPerformance;
+import com.crypto.task2.util.HttpClient;
 import com.crypto.task2.util.HttpClientTem;
 import com.crypto.task2.util.HttpClientUtil;
 import com.crypto.task2.util.JsonUtil;
@@ -54,13 +59,32 @@ public class Forcast4NineTest {
     	String url = nineUrl.replace("${dataType}", dataType);
     	url = url.replace("${lang}", lang);
     	
-    	HttpClientTem clientTem = new HttpClientTem();
-    	clientTem.setUrl(url);
-    	clientTem = HttpClientUtil.get(clientTem);
+//    	HttpClientTem clientTem = new HttpClientTem();
+//    	clientTem.setUrl(url);
+//    	clientTem = HttpClientUtil.get(clientTem);
+    	ResponseBean response = HttpClient.get(url, null);
     	dataResult ="获取天气预报对应的接口状态-响应200成功";
 
-    	Assert.assertEquals("获取天气预报对应的接口状态-接口返回状态异常",expectStatus, clientTem.getStatus());
+    	Assert.assertEquals("获取天气预报对应的接口状态-接口返回状态异常",expectStatus, 200);
 	}
+    
+    
+    @Test(dataProvider = "test1",description="测试接口-新模式",dataProviderClass=ForcastParameters.class)
+   	public void test1(Integer n, String bean,String descrption){
+    	WeathAPI weather = JSONObject.parseObject(bean, WeathAPI.class);
+       	String url = weather.getUrlWithParam();
+       	url = EnvParamter.HOST+url;
+       	
+//       	HttpClientTem clientTem = new HttpClientTem();
+//       	clientTem.setUrl(url);
+//       	clientTem = HttpClientUtil.get(clientTem);
+       	ResponseBean response = HttpClient.get(url, null);
+       	dataResult ="获取天气预报对应的接口状态-响应200成功";
+
+//       	Assert.assertEquals("获取天气预报对应的接口状态-接口返回状态异常",200, response.getStatus());
+   	}
+    
+    
     
     
     /**

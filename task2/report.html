@@ -45,19 +45,20 @@
 	  </tr>
 	  
 	  <tr>
-	    <td>10</td> 
+	    <td>1</td> 
+	    <td>3</td> 
+	    <td>1</td> 
 	    <td>0</td> 
-	    <td>10</td> 
 	    <td>0</td> 
-	    <td>0</td> 
-	    <td>32.206</td>     
+	    <td>0.962</td>     
 	    <td>100.00%</td>    
 	    <td>
-	    	        Forcast4NineTest.forcast4NineUrl(java.lang.Integer, java.lang.String)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]<br/>
-	    	        Forcast4NineTest.testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]<br/>
-	    	        Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@5e5792a0]<br/>
+	    	        Forcast4NineTest.test1(java.lang.Integer, java.lang.String, java.lang.String)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@ae45eb6]<br/>
 	    	    </td> 
 	    <td>
+	    	        Forcast4NineTest.testWentByDay(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@ae45eb6]<br/>
+	    	        Forcast4NineTest.testAccess200(java.lang.Integer, java.lang.String, java.lang.String, int)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@ae45eb6]<br/>
+	    	        Forcast4NineTest.forcast4NineUrl(java.lang.Integer, java.lang.String)[pri:0, instance:com.crypto.task2.cases.Forcast4NineTest@ae45eb6]<br/>
 	    	    </td>     
 	</tr>  
 	</table>
@@ -81,112 +82,13 @@
 	  
 	  	 <tr>   
 	      <td>1</td>
-	      <td>forcast4NineUrl</td>  
+	      <td>test1</td>  
 	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>0.002</td> 
-	      <td>1, "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=${dataType}&lang=${lang}"</td> 
-	      <td><div style="width:200px;"> 获取天气预报对应的接口url</div></td> 
-	      <td>获取天气预报对应的接口url成功<br/></td>
+	      <td>0.822</td> 
+	      <td>1, "{"assertMap":{"alipay_trade_pay_response.weatherForecast[0].week":"星期二","alipay_trade_pay_response.weatherForecast[1].week":"星期三"},"reqHeader":{},"request":{"dataType":"fnd","lang":"en"},"url":"/weatherAPI/opendata/weather.php","urlWithParam":"/weatherAPI/opendata/weather.php?dataType=fnd&lang=en"}", "测试中文版本的天气预报-week字段值"</td> 
+	      <td><div style="width:200px;"> 测试接口-新模式</div></td> 
+	      <td>获取天气预报对应的接口状态-响应200成功<br/></td>
 	      <td></td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>2</td>
-	      <td>testAccess200</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>1.516</td> 
-	      <td>1, "fnd", "tc", 200</td> 
-	      <td><div style="width:200px;"> 测试接口返回200场景</div></td> 
-	      <td>获取天气预报对应的接口状态-响应200成功<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>3</td>
-	      <td>testAccess200</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>21.390</td> 
-	      <td>1, "fnd", "sc", 200</td> 
-	      <td><div style="width:200px;"> 测试接口返回200场景</div></td> 
-	      <td>获取天气预报对应的接口状态-响应200成功<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>4</td>
-	      <td>testAccess200</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>2.950</td> 
-	      <td>1, "fnd", "en", 200</td> 
-	      <td><div style="width:200px;"> 测试接口返回200场景</div></td> 
-	      <td>获取天气预报对应的接口状态-响应200成功<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>5</td>
-	      <td>testWentByDay</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>0.903</td> 
-	      <td>1, "fnd", "tc", 2</td> 
-	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
-	      <td>language=tc forecastDate=20220111 湿度: 50%~85%<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>6</td>
-	      <td>testWentByDay</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>1.085</td> 
-	      <td>1, "fnd", "sc", 2</td> 
-	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
-	      <td>language=sc forecastDate=20220111 湿度: 50%~85%<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>7</td>
-	      <td>testWentByDay</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>0.323</td> 
-	      <td>1, "fnd", "en", 2</td> 
-	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
-	      <td>language=en forecastDate=20220111 湿度: 50%~85%<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>8</td>
-	      <td>testWentByDay</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>1.075</td> 
-	      <td>1, "fnd", "tc", 1</td> 
-	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
-	      <td>language=tc forecastDate=20220110 湿度: 70%~85%<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>9</td>
-	      <td>testWentByDay</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>2.328</td> 
-	      <td>1, "fnd", "sc", 1</td> 
-	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
-	      <td>language=sc forecastDate=20220110 湿度: 70%~85%<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
-	  
-	</tr> 
-		 <tr>   
-	      <td>10</td>
-	      <td>testWentByDay</td>  
-	      <td>com.crypto.task2.cases.Forcast4NineTest</td> 
-	      <td>0.593</td> 
-	      <td>1, "fnd", "en", 1</td> 
-	      <td><div style="width:200px;"> 测试获取对应天数的湿度数据-多语言版本</div></td> 
-	      <td>language=en forecastDate=20220110 湿度: 70%~85%<br/></td>
-	      <td>com.crypto.task2.cases.Forcast4NineTest.forcast4NineUrl</td>
 	  
 	</tr> 
 		   

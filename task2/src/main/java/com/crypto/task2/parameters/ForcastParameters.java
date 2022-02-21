@@ -1,8 +1,47 @@
 package com.crypto.task2.parameters;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.testng.annotations.DataProvider;
 
+import com.alibaba.fastjson.JSONObject;
+import com.crypto.task2.bean.WeathAPIData;
+import com.crypto.task2.interfaces.WeathAPI;
+import com.crypto.task2.util.PatternBean;
+
 public class ForcastParameters {
+	
+	
+	@DataProvider(name="test1")
+	  public static Object[][] test1() {
+		WeathAPI weather = new WeathAPI();
+		
+		WeathAPIData request = new WeathAPIData();
+		request.setDataType("fnd");
+		request.setLang("en");
+		weather.setRequest(request);
+		
+		
+		Map reqHeader = new HashMap();
+		weather.setReqHeader(new HashMap());
+		
+		Map assertMap = new HashMap();
+		assertMap.put("alipay_trade_pay_response.weatherForecast[0].week", "星期二");
+		assertMap.put("alipay_trade_pay_response.weatherForecast[1].week", "星期三");
+
+		weather.setAssertMap(assertMap);
+		
+	    return new Object[][] {
+	      new Object[] { 1, JSONObject.toJSONString(weather),"测试中文版本的天气预报-week字段值"
+	    		  
+	      }
+	    };
+	 }
+	
+	
 	  /**
      * 9天天气预报访问地址
      * @return

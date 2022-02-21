@@ -5,8 +5,8 @@
     <classes>
       <class name="com.crypto.task2.cases.Forcast4NineTest">
         <methods>
-          <include name="testWentByDay" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="forcast4NineUrl"/>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- com.crypto.task2.cases.Forcast4NineTest -->
     </classes>
