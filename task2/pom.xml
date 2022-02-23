@@ -20,20 +20,19 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
-      <scope>test</scope>
     </dependency>
-    
-    
+
+
     <dependency>
 	  <groupId>org.testng</groupId>
 	  <artifactId>testng</artifactId>
 	</dependency>
-	
+
 	 <dependency>
 	    <groupId>org.apache.commons</groupId>
 	    <artifactId>commons-email</artifactId>
 	</dependency>
-	
+
 	<!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity -->
 	<!--  velocity 解析vm模板-->
 	<dependency>
@@ -48,17 +47,17 @@
        <groupId>com.google.inject</groupId>
        <artifactId>guice</artifactId>
      </dependency>
-     
+
 	 <dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-	</dependency> 
+	</dependency>
 	<dependency>
 	    <groupId>net.sf.json-lib</groupId>
 	    <artifactId>json-lib</artifactId>
 	</dependency>
-	
-	
+
+
 	<!-- LOGGING begin -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -68,7 +67,7 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 		</dependency>
-		
+
 		<!-- common-logging 实际调用slf4j -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -79,15 +78,15 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>jul-to-slf4j</artifactId>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
 		<dependency>
 		    <groupId>commons-logging</groupId>
 		    <artifactId>commons-logging</artifactId>
 		</dependency>
-		
+
 		<!-- LOGGING end -->
-		
+
 		<!-- httpclient start -->
 		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
 		<dependency>
@@ -95,6 +94,6 @@
 		    <artifactId>httpclient</artifactId>
 		</dependency>
 		<!-- httpclient end-->
-		
+
   </dependencies>
 </project>
